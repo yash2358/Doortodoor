@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link href="signup.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- //Custom Theme files -->
+<!-- web font -->
+
+</head>
+<body id="alert">
+    <script src="signup.js"></script>
+	<!-- main -->
+	<nav class="navbar navbar-dark bg-dark" style="background-color: #76b852">
+		<a class="navbar-brand" style="color: aliceblue"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLWp1nA2DMxVOE6s55iX4xo3NnQhOohtyuzvtuD4lYtBLY69SkHn-ckpDNkE2WWo4oS9E&usqp=CAU" height="40" width="40">@yourDoor</a>
+		
+		  <input class="form-control mr-sm-2" type="text" placeholder="Username" aria-label="Search" id="usern">
+		  <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Search" id="pass1">
+		  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn1" onclick="funt()">Login</button>
+			  </nav>
+
+
+	<div class="main-w3layouts wrapper" >
+		<div class="container-fluid"> 
+		<div class="row">
+			<div class="col-lg-3">
+				<div style="margin-left: 5%">
+				
+						<img src="data:image/jpeg;base64,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">
+					 <p style="text-align:center; color:white; font-family:sarif; font-size:25px"> <h2>Welcome to @yourDoor Services</h2><br><h5> A place where you find everything.</h5>
+						@yourDoor brings the customers as well as the local retailers an amazing platform to get connected. We are eager to assist you, by directly providing
+						best quality items at your door. Be it your Stationary, Food or Medicines we have got them all.
+			</p>
+						<ol>
+							<li>SignIn/Login to our page.</li>
+							<li>Place your orders to sell/buy.</li>
+							<li>Only COD is available.</li>
+							<li>Enjoy.</li>
+						</ul>
+					<h5> Happy Shopping, Happy Selling </h5> 
+					
+					
+				</div>
+				</div>
+				<div class="col-lg-9">
+		<h1 style="margin-left: 55%">Create an account</h1>
+		<div class="main-agileinfo" style="margin-left: 60%">
+			<div class="agileits-top">
+				<form action="#" method="post">
+					<input class="text" type="text" name="Username" placeholder="Username" required="" id="username">
+					<br>
+					<input class="text" type="text" name="Username" placeholder="Full Name" required="" id="name">
+					<input class="text email" type="email" name="email" placeholder="Email" required="" id="email">
+					<input class="text" type="password" name="password" placeholder="Password" required="" id="pass">
+					<input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="" id="cpass">
+					<div class="btn-group btn-group-toggle" data-toggle="buttons" id="usertype">
+						
+						<label>
+						  <input type="radio" name="options" id="option1" autocomplete="off" value="Customer"> Customer
+						</label>
+				
+						<label>
+						  <input type="radio" name="options" id="option2" autocomplete="off" value="Retailer"> Retailer
+						</label>
+					  </div>
+					
+					<input type="submit" value="SIGNUP" id="sign" onclick="fun()">
+					
+				</form>
+				
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
+</html>
